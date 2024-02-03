@@ -1,0 +1,651 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oasis juga A? - ALDIANSAH</title>
+    <link rel="stylesheet" href="w3.css" />
+  </head>
+
+  <style>
+
+.nobody {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    min-height: 100vh;
+}
+
+.wrapper {
+    margin: 150px auto;
+    width: 70%;
+}
+
+.gambar1 {
+    max-width: 320px;
+    float: left;
+    border: 3px solid #000000;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+
+.text-box {
+    color: #000000;
+}
+
+.text-box h2 {
+    font-size: 42px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+.text-box p {
+    font-size: 16px;
+}
+
+.grid-container {
+            display: grid;
+            grid-auto-flow: dense;
+            grid-template-columns: auto auto;
+            padding: 25px;
+            width: 100%;
+            background-color: rgb(201, 201, 201);
+}
+
+.grid-item {
+            width: 100%;
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+            transition: all 0.5s;
+}
+
+.grid-item:hover {
+  border: 1px;
+  border-radius: 30px;
+  transform: scale(1.1);
+}
+
+.grid-container p {
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 1rem;
+}
+
+.img_deg {
+    float: right;
+    width: 30%;
+    border-radius: 10px;
+}
+
+.pos_cen {
+    position:absolute;
+    width: 70%;
+    left: 15%;
+    top: 40%;
+    background-color: rgb(255, 255, 255);
+    padding: 150px;
+    border-radius: 50px;
+    margin-top: 50px;
+}
+
+.pos_cen h1 {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-right: 130px;
+    letter-spacing: 5px;
+}
+
+.pos_cen p {
+    font-family:cursive;
+}
+
+.linka a{
+
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  display: flex;
+  padding: 10px 30px;
+  border-radius: 30px;
+  border: 1px solid white;
+  transition: all 0.5s;
+  margin-bottom: 10px;
+}
+
+.linka a:hover {
+  background: rgb(255, 255, 255);
+  color: black;
+  transform: scale(1.5);
+}
+
+.imagewallpaper {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1;
+        }
+
+video {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+
+.profile-container {
+            display: flex;
+            justify-content:space-between;
+            position: relative;
+            left: 380px;
+            margin-top: 80px;
+            padding: 25px;
+            width: 40%;
+            background-color: rgb(0, 0, 0);
+            margin-bottom: 70px;
+            border-radius: 30px;
+}
+
+.grid-text {
+            background-color: rgb(255, 255, 255);
+            width: 100%;
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+            border-radius: 20px;
+
+}
+
+.profile-container p {
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 1rem;
+}
+
+.aboutme {
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 3px;
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  display: flex;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: 1px solid white;
+  margin-bottom: 50px;
+}
+
+.awards {
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 3px;
+  background: rgb(189, 189, 189);
+  display: flex;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: 1px solid white;
+  margin-bottom: 50px;
+}
+
+  </style>
+
+  <body style="background-color: rgb(201, 201, 201)">
+    <div class="banner" style="background-color: black">
+      <center>
+        <img src="picturelogo.jpeg" alt="" />
+      </center>
+    </div>
+
+    <div
+      style="
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      "
+      class="w3-bar w3-white w3-card-4"
+    >
+      <button class="w3-bar-item w3-button" onclick="standbyme('sejarah')">
+        Sejarah
+      </button>
+      <button class="w3-bar-item w3-button" onclick="standbyme('gaya')">
+        Gaya Bermusik
+      </button>
+      <button class="w3-bar-item w3-button" onclick="standbyme('penghargaan')">
+        Penghargaan
+      </button>
+      <button class="w3-bar-item w3-button" onclick="standbyme('diskografi')">
+        Diskografi
+      </button>
+      <div class="w3-dropdown-hover">
+        <button class="w3-bar-item w3-button" onclick="standbyme('personil')">
+          Personil
+        </button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+          <button
+            class="w3-bar-item w3-button"
+            onclick="standbyme('formasiTetapTerakhir')"
+          >
+            Formasi Tetap Terakhir
+          </button>
+          <button
+            class="w3-bar-item w3-button"
+            onclick="standbyme('PersonilPendukung')"
+          >
+            Personil Pendukung
+          </button>
+          <button
+            class="w3-bar-item w3-button"
+            onclick="standbyme('MantanPersonilTetap')"
+          >
+            Mantan Personil Tetap
+          </button>
+        </div>
+      </div>
+
+      <button class="w3-bar-item w3-button w3-right" onclick="standbyme('home')">
+        Home
+      </button>
+
+      <button
+        class="w3-bar-item w3-button w3-right"
+        onclick="standbyme('profile')"
+      >
+        Profil
+      </button>
+    </div>
+
+    <center>
+        <div
+      id="home"
+      class="w3-container oasis" style="background-color: #141414;">
+      <div>
+      <video autoplay muted loop>
+        <source class="imagewallpaper" src="videowallpaper.mp4" type="video/mp4">
+    </video>
+      </center>
+  </div>
+
+    <div id="sejarah" class="w3-container oasis w3-animate-bottom" style="display: none">
+      <center>
+        <div class="nobody">
+        <div class="wrapper">
+        <img class="gambar1" src="picturecoversejarah.jpg" alt="home">
+        <div class="text-box">
+            <h2>SEJARAH</h2>
+        <p>
+          Oasis adalah band rock asal Inggris yang dibentuk di Manchester pada
+          tahun 1991. Pada awalnya menggunakan nama the Rain, grup ini dibentuk
+          oleh Liam Gallagher (vokal), Paul Arthurs (gitar), Paul McGuigan
+          (bass), dan Tony McCarroll (drum dan perkusi), hingga kemudian ikut
+          bergabung pula kakak Liam, Noel Gallagher (gitar dan vokal). Setelah
+          mengganti nama menjadi Oasis, para anggotanya menandatangani kontrak
+          dengan label rekaman indie Creation Records dan setelah itu merilis
+          album perdana mereka Definitely Maybe pada tahun 1994. Tahun
+          berikutnya, Oasis merilis (What's the Story) Morning Glory? bersama
+          drummer baru Alan White di tengah persaingan dengan band britpop lain,
+          Blur. Gallagher bersaudara juga secara berkala menjadi topik dalam
+          tabloid dan berita atas gaya hidup liar dan perselisihan mereka. Pada
+          tahun 1997, Oasis merilis album ketiga mereka, Be Here Now. Walaupun
+          album memiliki angka penjualan tercepat dalam sejarah Inggris,
+          popularitas album ketiga mereka menurun dengan sangat cepat. Oasis
+          kemudian kehilangan anggota Paul McGuigan dan Paul Arthurs ketika
+          mereka dalam proses rekaman dan akan merilis Standing on the Shoulder
+          of Giants pada tahun 2000. Dua posisi kosong tersebut kemudian
+          digantikan oleh Gem Archer dan Andy Bell. Oasis berhasil menemukan
+          kesuksesan dan popularitas kembali melalui album Don't Believe the
+          Truth pada tahun 2005.[1] Pada Agustus 2009, Noel Gallagher
+          mengumumkan pengunduran dirinya dari Oasis pasca perkelahian belakang
+          panggung dengan Liam.[2][3][4] Anggota tersisa dari Oasis, dipimpin
+          oleh Liam Gallagher, memutuskan untuk melanjutkan pekerjaan mereka
+          bersama di bawah nama Beady Eye,[5] sementara Noel membentuk proyek
+          solo Noel Gallagher's High Flying Birds.
+
+          <p>
+            Oasis, dengan tujuh singel dan tujuh album yang pernah memuncaki posisi satu di tangga musik Inggris, pernah memenangkan lima belas NME Awards, sembilan Q Awards, empat MTV Europe Music Awards dan enam Brit Awards, termasuk salah satunya pada tahun 2007 untuk kontribusi luar biasa terhadap musik dan satu untuk album terbaik dalam 30 tahun terakhir berdasarkan polling pendengar BBC Radio 2. Oasis juga pernah dinominasikan untuk tiga buah Grammy Award. Terhitung per tahun 2009, Oasis telah menjual sekitar 70 juta copy rekaman mereka di seluruh dunia.[6] Juga Oasis didaftar dalam Guinness Book of World Records pada tahun 2010 untuk “Longest Top 10 UK Chart Run By A Group” setelah berhasil memposisikan 22 single hits di top-10 chart musik Inggris.[7] Oasis juga memegang rekor dunia Guinness sebagai entitas musik tersukses antara tahun 1995 hingga 2005, menduduki selama 765 minggu di chart musik Top 75.[8][9]
+          </p>
+        </p>
+      </center>
+    </div>
+    </div>
+</div>
+</div>
+
+    <div
+      id="gaya"
+      class="w3-container oasis w3-animate-Bottom"
+      style="display: none"
+    >
+      <center>
+        <h1 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; letter-spacing: 5px;">GAYA BERMUSIK</h1>
+        <img src="picturekonser1.jpg" alt="gayabermusik" width="300px" style="border: 3px solid #000000; border-radius: 30px; margin-bottom: 60px;"/>
+        <p>
+            Oasis sangat dipengaruhi oleh The Beatles, sebuah pengaruh yang sering kali disebut sebagai sebuah "obsesi" oleh media Inggris.[94][95][96] Sebagai tambahan, para anggota Oasis juga menyebutkan The Stone Roses,[97] T. Rex,[98] S** Pistols, Slade, Small Faces, The Who, Nirvana, The Rolling Stones, The Stooges, The La's, The Doors, Jimi Hendrix, Bob Dylan, Neil Young, R.E.M., Humble Pie, Happy Mondays, Inspiral Carpets, The Kinks, The Jam, Pink Floyd, The Verve, Led Zeppelin, David Bowie, The Velvet Underground, Talking Heads,[99] dan The Smiths.[100]</p>
+            <p>Aksi legal pernah diambil atas kasus Neil Innes (mantan anggota Bonzo Dog Doo-Dah Band dan The Rutles) yang menggugat lagu "Whatever" atas plagiarisme terhadap lagu Neil "How Sweet to Be an Idiot". Neil mendapat bagian royalti dan kredit atasnya. Noel Gallagher mengklaim pada tahun 2010 bahwa plagiarisme tersebut tidak disengaja dan dia tidak tahu akan kemiripan kedua lagu tersebut hingga munculnya gugatan Neil.[101] Oasis juga pernah digugat oleh Coca-Cola dan diharuskan membayar denda $500.000. Ketika ditanya mengenai insiden tersebut, Noel Gallagher mengucapkan lelucon, “Sekarang kami semua minum Pepsi.” "Shakermaker" menurut dugaan orang-orang meminjam lirik dan melodi dari "I'd Like to Teach the World to Sing".[102] Ketika copy promosional (What's the Story) Morning Glory? didistribusikan pertama kalinya, terdapat lagu berjudul "Step Out". CD promosional tersebut segera ditarik dan diganti dengan versi tanpa lagu kontroversial tersebut yang didiga mirip dengan lagu Stevie Wonder, "Uptight (Everything's Alright)". Lagu tersebut kemudian muncul sebagai b-side singel "Don't Look Back in Anger", walaupun sekarang tertulis "Stevie Wonder, et. al" sebagai wakil penulis.
+        </p>
+      </center>
+    </div>
+
+  <div id="penghargaan" class="w3-display-container oasis w3-card-4 w3-white"
+  style="display:none;">
+  <div class="grid-container">
+      <div class="grid-item w3-animate-zoom">
+          <div class="w3-panel w3-white w3-round-xlarge">
+              <p>
+                  <center>
+                      <h2 class="awards">NME AWARDS</h2>
+                      <img src="picturenmeawards.jpg" style="width: 25%;">
+                      <p>Oasis menerima penghargaan NME Awards sebanyak 15</p>
+                  </center>
+              </p>
+          </div>
+      </div>
+      <div class="grid-item w3-animate-zoom">
+          <div class="w3-panel w3-white w3-round-xlarge">
+              <p>
+                  <center>
+                      <h2 class="awards">BRIT AWARDS</h2>
+                      <img src="picturebritawards.jpg" style="width: 17%;">
+                      <p>Oasis menerima penghargaan Brit Awards sebanyak 6</p>
+                  </center>
+              </p>
+          </div>
+      </div>
+      <div class="grid-item w3-animate-zoom">
+          <div class="w3-panel w3-white w3-round-xlarge">
+              <p>
+                  <center>
+                      <h2 class="awards">MTV EUROPE AWARDS</h2>
+                      <img src="picturemtveuropeawards.jpg" style="width: 16%;">
+                      <p>Oasis menerima penghargaan MTV Europe Music Awards sebanyak 4</p>
+                  </center>
+              </p>
+          </div>
+      </div>
+      <div class="grid-item w3-animate-zoom">
+          <div class="w3-panel w3-white w3-round-xlarge">
+              <p>
+                  <center>
+                      <h2 class="awards">Q AWARDS</h2>
+                      <img src="pictureqawards.jpg" style="width: 25%;">
+                      <p>Oasis menerima penghargaan Q-Awards sebanyak 9</p>
+                  </center>
+              </p>
+          </div>
+      </div>
+      </div>
+  </div>
+</div>
+
+<div
+      id="diskografi"
+      class="w3-container oasis w3-animate-Bottom"
+      style="display: none"
+    >
+    <div class="pos_cen">
+        <h2 align="center" style="font-family: monospace;">SO WHAT THE MATTER WITH YOU?</h2><br>
+        <div class="linka">
+            <a href="#definitely"><i class="fas fa-user">Definitely Maybe (1994)</i></a>
+            <a href="#morningglory"><i class="fas fa-user">(What's the Story) Morning Glory? (1995)</i></a>
+            <a href="#beherenow"><i class="fas fa-user">Be Here Now (1997)</i></a>
+            <a href="#standing"><i class="fas fa-user">Standing on the Shoulder of Giant (2000)</i></a>
+            <a href="#heathen"><i class="fas fa-user">Heathen Chemistry (2002)</i></a>
+            <a href="#dontbelievethetruth"><i class="fas fa-user">Don't Believe the Truth (2005)</i></a>
+            <a href="#digoutyoursoul"><i class="fas fa-user">Dig Out Your Soul (2008)</i></a>
+    </div>
+<br><br>
+
+      <center>
+        <h1 id="definitely">Definitely Maybe (1994)</h1>      
+        <img class="img_deg" src="picturekonser1.jpg" alt="gayabermusik" width="300px" />
+        <p>
+            Definitely Maybe adalah album debut dari grup musik Oasis, dirilis pada 29 Agustus 1994. Album ini mendapat tanggapan yang hangat dari pasar serta kritik yang positif. Kemunculan album ini segera menjadi fenomena di Inggris, dengan langsung memuncaki UK Album Chart segera setelah diluncurkan termasuk diikuti oleh kesuksesan single Supersonic dan Live Forever di Inggris dan Amerika Serikat.
+
+            Definitely Maybe adalah debut album yang paling cepat penjualannya sepanjang masa dalam dunia musik Inggris. Dan telah diberikan penghargaan 7x Platinum ( sekitar 2.1 juta penjualan ) di sana. Album ini juga menjadi penanda kesuksesan awal Oasis di Amerika dengan penjualan lebih dari sejuta kopi di sana, walaupun album ini hanya mencapai urutan ke 58 dalam Billboard 200. Secara keseluruhan album ini mencapai penjualan 7 juta kopi di seluruh dunia.
+        </p>
+      </center>
+<br><br>
+    <center>
+      <h1 id="morningglory">(What's the Story) Morning Glory? (1995)</h1>      
+      <img class="img_deg" src="picturealbummorningglory.jpg" alt="gayabermusik" width="300px" />
+      <p>
+        (What's the Story) Morning Glory? adalah album kedua dari band rock Inggris Oasis, dirilis pada 2 Oktober 1995 lewat Creation Records. Diproduksi oleh Owen Morris dan gitaris grup, Noel Gallagher. Aransemen dan struktur gaya dari album cukup berbeda dari album mereka sebelumnya Definitely Maybe. Komposisi Gallagher bersaudara lebih fokus ke aliran ballad. (What's the Story) Morning Glory? menjadi peenampilan perdana bagi drummer Alan White, yang menggantikan Tony McCarroll.
+        Album (What's the Story) Morning Glory? menjadi album tersukses sepanjang sejarah Oasis dimana album tersebut terjual sebanyak 347.000 kopi di minggu pertama dan menempati posisi pertama selama 10 minggu di UK Albums Chart. Singel Some Might Say dan Don't Look Back in Anger mencapai puncak tangga lagu Britania Raya, begitu juga Wonderwall dan Champagne Supernova yang menjadi nomor satu di tangga lagu Amerika Serikat.
+      </p>
+    </center>
+    <br><br>
+    <center>
+      <h1 id="beherenow">Be Here Now (1997)</h1>      
+      <img class="img_deg" src="picturealbumbeherenow.jpg" alt="gayabermusik" width="300px" />
+      <p>
+        Be Here Now is the third studio album by English rock band Oasis, released on 21 August 1997 by Creation Records. The album was recorded at multiple recording studios in London, including Abbey Road Studios, as well as Ridge Farm Studio in Surrey. Although most tracks retain the anthemic quality of previous releases, the songs on Be Here Now are longer and contain many guitar overdubs. Noel Gallagher said this was done to make the album sound as "colossal" as possible. The album cover features a shot of the band members at Stocks House in Hertfordshire. It is the last Oasis studio album to feature founding members guitarist Paul "Bonehead" Arthurs and bassist Paul "Guigsy" McGuigan as the two left in 1999.
+
+        Following the worldwide success of their first two albums, Definitely Maybe (1994) and (What's the Story) Morning Glory? (1995), the album was highly anticipated. Oasis' management company, Ignition, were aware of the dangers of overexposure, and before release sought to control media access to the album. The campaign included limiting pre-release radio airplay and forcing journalists to sign gag orders. The tactics alienated the press and many industry personnel connected with the band and fuelled large-scale speculation and publicity within the British music scene.
+      </p>
+    </center>
+    <br><br>
+    <center>
+      <h1 id="standing">Standing on the Shoulder of Giant (2000)</h1>      
+      <img class="img_deg" src="picturealbumstanding.jpg" alt="gayabermusik" width="300px" />
+      <p>
+        Standing on the Shoulder of Giants is the fourth studio album by English rock band Oasis, released on 28 February 2000. It was the band's first album under their new record label Big Brother Recordings. In the year preceding the album's release, Alan McGee closed Creation Records, and Oasis had lost two founding members (Paul "Bonehead" Arthurs and Paul "Guigsy" McGuigan) and hired new producer Mark "Spike" Stent to replace Owen Morris.
+
+        The album marked a significant change from the Britpop scene to a modern psychedelic record complete with drum loops, samples, electric sitar, mellotron, synthesizers and backward guitars, resulting in an album more experimental with electronica and heavy psychedelic rock influences. Songs such as "Go Let It Out", the Indian-influenced "Who Feels Love?", and the progressive "Gas Panic!" departed from the band's earlier style. This album also marked the first time that lead singer Liam Gallagher contributed on songwriting ("Little James"), and this tradition was continued for their subsequent albums, instead of primarily Noel Gallagher's songwriting in the first three albums.
+      </p>
+    </center>
+    <br><br>
+    <center>
+      <h1 id="heathen">Heathen Chemistry (2002)</h1>      
+      <img class="img_deg" src="picturealbumheatenchemistry.jpg" alt="gayabermusik" width="300px" />
+      <p>
+        Heathen Chemistry is the fifth studio album by English rock band Oasis. It was released on 1 July 2002 by Big Brother Recordings. It is the first Oasis studio album recorded with guitarist Gem Archer and bassist Andy Bell, who both joined the band after work on previous album Standing on the Shoulder of Giants had been completed. It is the last album to feature longtime drummer, Alan White, who left in early 2004, with Noel Gallagher citing White's lack of commitment to the band as the reason for leaving.
+      </p>
+    </center>
+    <br><br>
+    <center>
+      <h1 id="dontbelievethetruth">Don't Believe the Truth (2005)</h1>      
+      <img class="img_deg" src="picturealbumdontbelievethetruth.jpg" alt="gayabermusik" width="300px" />
+      <p>
+        Don't Believe the Truth is the sixth studio album by English rock band Oasis. It was released on 30 May 2005 by Big Brother Recordings. It reached number one in the UK Albums Chart with first week sales of 237,865, and is the 32nd fastest selling album ever in the UK. The album entered the US charts at number 12, with 65,000 copies sold in the first week, the highest any Oasis album had reached there since 1997's Be Here Now, although its chart stay was brief. Don't Believe the Truth went triple platinum in the UK in the first week of 2006 (900,000+ sales), and in the US has sold more than 200,000 copies.[4][5]
+      </p>
+    </center>
+    <br><br>
+    <center>
+      <h1 id="digoutyoursoul">Dig Out Your Soul (2008)</h1>      
+      <img class="img_deg" src="picturealbumdigoutyoursoul.jpg" alt="gayabermusik" width="300px" />
+      <p>
+        Dig Out Your Soul is the seventh and final studio album by English rock band Oasis. It was released on 6 October 2008 by Big Brother Recordings. The album was recorded between August and December 2007 at Abbey Road Studios in London, and mixed in January and March 2008 at The Village Recorder in Los Angeles. Production was handled by Dave Sardy who had previously produced much of the group's sixth studio album, Don't Believe the Truth (2005). Lead guitarist Noel Gallagher wrote a majority of the songs, while three were written by Liam Gallagher as well as one contribution each from Gem Archer and Andy Bell.
+
+        The album was supported by three singles. The first single, "The Shock of the Lightning", was released shortly before the release of the album, on 29 September 2008. In addition to the standard release, there was also a limited edition boxset containing the album on CD, a bonus disc containing extra material and remixes, a DVD with a documentary of the making of the album, four 12" vinyl discs that contained all the music from the CDs cut in high-quality 45rpm and a hardback book of album artwork.
+      </p>
+    </center>
+</div>
+</div>
+
+<div id="formasiTetapTerakhir" class="w3-container oasis w3-animate-bottom" style="display: none">
+    <center>
+      <div class="nobody">
+      <div class="wrapper">
+      <img class="gambar1" src="pictureliamgalagher.jpg" alt="formasiTetapTerakhir">
+      <div class="text-box">
+          <h2>Liam Gallagher - vokal <br>(1991-2009)</h2>
+      <p>
+        William John Paul Gallagher (lahir 21 September 1972) merupakan seorang penyanyi dan penulis lagu berkebangsaan Inggris. Dia merupakan vokalis dari Grup Musik Inggris Oasis dari tahun 1991-2009 sebelum akhirnya merilis debut album solonya sendiri pada tahun 2017.
+        </p>
+    </center>
+    <hr>
+    <center>
+        <div class="nobody">
+            <div class="wrapper">
+            <img class="gambar1" src="picturegemarcher.jpg" alt="formasiTetapTerakhir">
+            <div class="text-box">
+                <h2>Colin "Gem" Archer - gitar, backing vokal <br>(1999-2009)</h2>
+            <p>
+                Colin "Gem" Archer (lahir 7 Desember 1966) pertama kali bergabung dengan grup musik pertamanya Heavy Stereo sebagai pemimpin, vokalis dan gitaris, tetapi karena grup musik yang ia buat tidak begitu sukses akhirnya bubar.
+              </p>
+    </center>
+    <hr>
+    <center>
+        <div class="nobody">
+        <div class="wrapper">
+        <img class="gambar1" src="pictureandrewpiranbell.jpg" alt="PersonilPendukung">
+        <div class="text-box">
+            <h2>Andy Bell - bass <br>(1999-2009)</h2>
+        <p>
+            Andrew Piran Bell (born 11 August 1970) is a Welsh singer, songwriter, musician, record producer, and DJ. He is one of two vocalists and guitarists of the English rock band Ride, and was formerly the bassist of Oasis from 1999 until their breakup in 2009. Bell was also a member of Hurricane #1 as well as Liam Gallagher's post-Oasis project Beady Eye until their breakup in 2014.
+          </p>
+      </center>
+  </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="PersonilPendukung" class="w3-container oasis w3-animate-bottom" style="display: none">
+    <center>
+      <div class="nobody">
+      <div class="wrapper">
+      <img class="gambar1" src="picturesharrock.jpg" alt="PersonilPendukung">
+      <div class="text-box">
+          <h2>Chris Sharrock - drum, perkusi <br>(2008-2009)</h2>
+      <p>
+        Sharrock's recording career began as a member of the Cherry Boys; he was the drummer on the band's first single, "Man to Man", released in January 1981. Sharrock then left the Cherry Boys for the Icicle Works, with whom he stayed until 1988, playing on the band's first four albums. He then left that band and briefly joined the La's, drumming on their hit single "There She Goes". He left the La's shortly thereafter, and drummed on the Wild Swans' second album in 1990.
+        </p>
+    </center>
+    <hr>
+    <center>
+        <div class="nobody">
+            <div class="wrapper">
+            <img class="gambar1" src="picturezakstarkey.jpg" alt="formasiTetapTerakhir">
+            <div class="text-box">
+                <h2>Zak Starkey - drum, perkusi <br>(2004-2008)</h2>
+            <p>
+                Zak Richard Starkey (born 13 September 1965) is an English rock drummer who has performed and recorded with the English rock band the Who since 1996. He is also the third drummer to have appeared with the English rock band Oasis. Other musicians and bands he has worked with include Johnny Marr, The Icicle Works, the Lightning Seeds, and The Semantics. Starkey is the son of the Beatles' drummer Ringo Starr.
+              </p>
+    </center>
+    <hr>
+    <center>
+        <div class="nobody">
+        <div class="wrapper">
+        <img class="gambar1" src="picturedarlington.png" alt="PersonilPendukung">
+        <div class="text-box">
+            <h2>Jay Darlington - keyboard <br>(2002-2009)</h2>
+        <p>
+            Jay Peter Darlington (born 1968 in Sidcup, England) is an English keyboardist, best known as a member of Kula Shaker.[1] He went on to work as a touring member of Oasis and is currently a member of the Totnes, Devon based prog band, Magic Bus.[2]
+          </p>
+      </center>
+  </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="MantanPersonilTetap" class="w3-container oasis w3-animate-bottom" style="display: none">
+    <center>
+      <div class="nobody">
+      <div class="wrapper">
+      <img class="gambar1" src="picturenoelgalagher.jpg" alt="PersonilPendukung">
+      <div class="text-box">
+          <h2>Noel Gallagher - gitar, vokal, keyboard, bass <br>(1991-2009)</h2>
+      <p>
+        Noel Thomas David Gallagher (born 29 May 1967) is an English musician, singer and songwriter. He was the primary songwriter, lead guitarist and co-lead vocalist of the rock band Oasis until their split in 2009. After leaving Oasis, he formed Noel Gallagher's High Flying Birds. He is one of the most successful songwriters in British music history, as the writer of eight UK number-one singles and co-writer of a further number one, as well as the sole or primary writer of ten UK number-one studio albums. He is widely considered to be one of the most influential songwriters in the history of British rock music, cited by numerous major subsequent artists as an influence.[1][2]
+        </p>
+    </center>
+    <hr>
+    <center>
+        <div class="nobody">
+            <div class="wrapper">
+            <img class="gambar1" src="picturealanwhite.jpg" alt="formasiTetapTerakhir">
+            <div class="text-box">
+                <h2>Alan White - drum, perkusi <br>(1995-2004)</h2>
+            <p>
+                Alan Victor "Whitey"[1] White (born 26 May 1972) is an English drummer, best known as the drummer of the rock band Oasis from 1995 to 2004. Before Oasis, he was the drummer of Starclub from 1991 to 1994. He joined the band in April 1995 after the band's original drummer Tony McCarroll was removed, and is the longest-serving drummer in Oasis's history, performing on four studio albums, a B-side compilation, and one live album during his tenure, as well as recording one track that would appear on Don't Believe the Truth. He was recommended to Noel Gallagher by Gallagher's friend Paul Weller. Notably, Alan's brother, Steve,[2] had been a longtime drummer for Weller. White left Oasis in early 2004 and was replaced by Zak Starkey, drummer of The Who and son of The Beatles' drummer Ringo Starr.
+              </p>
+    </center>
+    <hr>
+    <center>
+        <div class="nobody">
+        <div class="wrapper">
+        <img class="gambar1" src="picturepaularthur.jpg" alt="PersonilPendukung">
+        <div class="text-box">
+            <h2>Paul "Bonehead" Arthurs - gitar, keyboard <br>(1991-1999)</h2>
+        <p>
+            Arthurs was born in 1965 at Saint Mary's Hospital in Manchester,[3] the son of Irish Catholic immigrants. He went to St. Peter's Roman Catholic Grammar School in the nearby town of Prestwich. He earned the nickname "Bonehead" at the age of eight after his parents insisted he get very short haircuts. "It was only my mum and dad throughout my life, really, that called me Paul," Arthurs said.[4] Arthurs left school in 1981 and worked as a plasterer. He started his first band, Pleasure and Pain, in 1984. Around this time, he began a relationship with his future wife Kate. In the late 1980s, while working as a building contractor, he started a band, the Rain, with his friends Paul "Guigsy" McGuigan, Tony McCarroll, and Chris Hutton. Unlike the Gallagher Brothers who are Manchester City supporters, Bonehead is a Manchester United fan.[5]
+          </p>
+      </center>
+      <hr>
+      <center>
+        <div class="nobody">
+        <div class="wrapper">
+        <img class="gambar1" src="picturepaulmcguigan.jpg" alt="PersonilPendukung">
+        <div class="text-box">
+            <h2>Paul "Guigsy" McGuigan - bass <br>(1991-1999)</h2>
+        <p>
+            Paul Francis McGuigan (born 9 May 1971), known professionally as Guigsy (pronounced "Gwigzee"), is an English musician. He is best known as the original bassist and co-founder of the rock band Oasis.
+          </p>
+      </center>
+      <hr>
+      <center>
+        <div class="nobody">
+        <div class="wrapper">
+        <img class="gambar1" src="picturetonymccaroll.jpg" alt="PersonilPendukung">
+        <div class="text-box">
+            <h2>Hendarso - drum, vokalis <br>(1996-2048)</h2>
+        <p>
+            Hendarso atau lebih dikenal dengan Kang Darso (12 Agustus 1945 – 12 September 2011) adalah penyanyi yang sudah menghasilkan ratusan karya lagu bernuansa pop rock british. ia mempunyai seorang istri pertama bernama Epong (almarhum), setelah istrinya meninggal kemudian menikah dengan Lina Marlina.
+<br>
+            Darso memulai karier pada tahun 1996 sebagai pemain irama pada grup musik Oasis dan Nirvana. Sempat bergabung dengan band milik Pusat Persenjataan Kavaleri Bandung. Ia berhenti terkena imbas peristiwa G 30 S/PKI. Pada tahun 1968 ia memulai lagi kariernya lagi bersama sang kakak Uko Hendarso menggarap musik dengan instrumen utama yaitu "calung" salah satu lagu yang diminati waktu itu "kiamat'.
+          </p>
+      </center>
+  </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+    <div
+      id="profile"
+      class="w3-container oasis w3-animate-zoom"
+      style="display: none"
+    >
+    <div class="profile-container">
+      <div class="grid-text w3-animate-zoom">
+          <div class="w3-panel w3-white w3-round-xlarge">
+              <p>
+                  <center>
+                      <h2 class="aboutme">ABOUT ME!</h2>
+                      <img src="pictureme.jpg" style="width: 200px;">
+                      <p style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; letter-spacing: 3px;">Nim  :   10123259 <br>NAMA  :   ALDIANSAH <br>Kelas  :   IF-6</p>
+                  </center>
+              </p>
+          </div>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    function standbyme(merk) {
+      var i;
+      var x = document.getElementsByClassName("oasis");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      document.getElementById(merk).style.display = "block";
+    }
+  </script>
+</html>
